@@ -1,11 +1,24 @@
 body {
+    height: 100dvh;
+    width: 100dvw;
     margin: 0;
     padding: 0;
 }
 
 div.container-grid-box {
-    height: 45px;
-    width: 45px;
-    border: 5px solid pink;
+    height: 6.25%;
+    width: 100%;
+    border: 2px solid pink;
+    box-sizing: border-box;
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.grid-box {
+    height: 100%;
+    width: 6.25%;
+    border: 1px solid red;
+    box-sizing: border-box;
+    background-color: white;
 }

@@ -20,6 +20,16 @@ btn.classList.toggle('request-user')
 document.body.appendChild(btn)
 btn.
 textContent = 'request grid'
-btn.addEventListener('click', () => {
-    console.log(typeof prompt('enter ypur number of grid box', '16'))
-})
+btn.addEventListener('click', totalGrid)
+
+function totalGrid() {
+
+    let total = parseInt(prompt())
+
+    for (let index = 0; index < total; index++) {
+        
+        console.log('grid')
+
+    }
+
+}

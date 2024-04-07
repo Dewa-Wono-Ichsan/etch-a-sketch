@@ -22,7 +22,3 @@ div.grid-box {
     box-sizing: border-box;
     /* background-color: white; */
 }
-
-div.grid-box:hover {
-    background-color: palevioletred;
-}

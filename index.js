@@ -8,8 +8,8 @@ for (let index = 0; index < 16; index++) {
         const gridBox = document.createElement('div')
         gridBox.classList.toggle('grid-box')    
         containerGridBox.appendChild(gridBox)
-        gridBox.addEventListener('click', () => {
-            gridBox.style.backgroundColor = 'blue'
+        gridBox.addEventListener('mouseover', () => {
+            gridBox.style.backgroundColor = 'pink'
         })
     }
     

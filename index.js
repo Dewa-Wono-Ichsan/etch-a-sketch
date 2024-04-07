@@ -18,8 +18,7 @@ for (let index = 0; index < 16; index++) {
 const btn = document.createElement('button')
 btn.classList.toggle('request-user')
 document.body.appendChild(btn)
-btn.
-textContent = 'request grid'
+btn.textContent = 'request grid'
 btn.addEventListener('click', totalGrid)
 
 function totalGrid() {
@@ -28,7 +27,12 @@ function totalGrid() {
 
     for (let index = 0; index < total; index++) {
         
-        console.log('grid')
+        const gridBox2 = document.createElement('div')
+        gridBox2.classList.toggle('grid-box2')
+        document.body.appendChild(gridBox2)
+        gridBox2.style.height = '5%'
+        gridBox2.style.width = '100%'
+        gridBox2.style.backgroundColor = 'red'
 
     }
 

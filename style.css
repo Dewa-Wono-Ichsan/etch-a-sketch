@@ -8,9 +8,9 @@ body {
 div.container-grid-box {
     height: 6.25%;
     width: 100%;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     box-sizing: border-box;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -18,7 +18,11 @@ div.container-grid-box {
 div.grid-box {
     height: 100%;
     width: 6.25%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
-    background-color: white;
+    /* background-color: white; */
+}
+
+div.grid-box:hover {
+    background-color: palevioletred;
 }

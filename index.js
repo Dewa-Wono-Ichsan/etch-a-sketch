@@ -14,3 +14,12 @@ for (let index = 0; index < 16; index++) {
     }
     
 }
+
+const btn = document.createElement('button')
+btn.classList.toggle('request-user')
+document.body.appendChild(btn)
+btn.
+textContent = 'request grid'
+btn.addEventListener('click', () => {
+    console.log(typeof prompt('enter ypur number of grid box', '16'))
+})

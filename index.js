@@ -30,7 +30,7 @@ function totalGrid() {
         const gridBox2 = document.createElement('div')
         gridBox2.classList.toggle('grid-box2')
         document.body.appendChild(gridBox2)
-        gridBox2.style.height = '5%'
+        gridBox2.style.height = `${100/total}%`
         gridBox2.style.width = '100%'
         gridBox2.style.backgroundColor = 'red'
 

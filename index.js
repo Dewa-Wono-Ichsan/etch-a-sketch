@@ -34,6 +34,17 @@ function totalGrid() {
         gridBox2.style.width = '100%'
         gridBox2.style.backgroundColor = 'red'
 
+        for (let index = 0; index < total; index++) {
+
+            const gridBox3 = document.createElement('div')
+            gridBox3.classList.toggle('grid-box3')
+            gridBox2.appendChild(gridBox3)
+            gridBox3.style.height = '100%'
+            gridBox3.style.width = `${100/total}%`
+            gridBox3.style.backgroundColor = 'violet'
+            
+        }
+
     }
 
 }

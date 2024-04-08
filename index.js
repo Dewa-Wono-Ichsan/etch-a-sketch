@@ -25,7 +25,10 @@ function totalGrid() {
             gridBox3.style.height = '100%'
             gridBox3.style.width = `${100/total}%`
             gridBox3.addEventListener('mouseover', () => {
-                gridBox3.style.backgroundColor = 'rgb(0, 0, 0)'
+                gridBox3.style.backgroundColor = 
+                `rgb(
+                    ${255 * Math.random()}, ${255 * Math.random()}, ${255 * Math.random()}
+                    )`
             })
             
             

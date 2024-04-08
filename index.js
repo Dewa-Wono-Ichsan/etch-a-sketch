@@ -8,6 +8,10 @@ function totalGrid() {
 
     let total = parseInt(prompt())
 
+    if (total > 100 || total < 1) {
+        return alert('choose between 1 and 100 grid box you want')
+    } else {
+
     for (let index = 0; index < total; index++) {
         
         const gridBox2 = document.createElement('div')
@@ -29,9 +33,10 @@ function totalGrid() {
                 `rgb(
                     ${255 * Math.random()}, ${255 * Math.random()}, ${255 * Math.random()}
                     )`
-            })
+                })
             
             
+            }
         }
 
     }

@@ -1,20 +1,3 @@
-
-for (let index = 0; index < 16; index++) {
-    const containerGridBox = document.createElement('div')
-    containerGridBox.classList.toggle('container-grid-box')
-    document.body.appendChild(containerGridBox)
-
-    for (let index = 0; index < 16; index++) {
-        const gridBox = document.createElement('div')
-        gridBox.classList.toggle('grid-box')    
-        containerGridBox.appendChild(gridBox)
-        gridBox.addEventListener('mouseover', () => {
-            gridBox.style.backgroundColor = 'pink'
-        })
-    }
-    
-}
-
 const btn = document.createElement('button')
 btn.classList.toggle('request-user')
 document.body.appendChild(btn)
@@ -33,7 +16,6 @@ function totalGrid() {
         gridBox2.style.height = `${100/total}%`
         gridBox2.style.width = '100%'
         gridBox2.style.display = 'flex'
-        gridBox2.style.backgroundColor = 'red'
 
         for (let index = 0; index < total; index++) {
 
@@ -42,7 +24,10 @@ function totalGrid() {
             gridBox2.appendChild(gridBox3)
             gridBox3.style.height = '100%'
             gridBox3.style.width = `${100/total}%`
-            gridBox3.style.backgroundColor = 'violet'
+            gridBox3.addEventListener('mouseover', () => {
+                gridBox3.style.backgroundColor = 'rgb(0, 0, 0)'
+            })
+            
             
         }
 

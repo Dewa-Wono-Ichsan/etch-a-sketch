@@ -32,6 +32,7 @@ function totalGrid() {
         document.body.appendChild(gridBox2)
         gridBox2.style.height = `${100/total}%`
         gridBox2.style.width = '100%'
+        gridBox2.style.display = 'flex'
         gridBox2.style.backgroundColor = 'red'
 
         for (let index = 0; index < total; index++) {

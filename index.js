@@ -6,7 +6,7 @@ btn.addEventListener('click', totalGrid)
 
 function totalGrid() {
 
-    let total = parseInt(prompt())
+    let total = parseInt(prompt('Type the total of grid box you want', 50))
 
     if (total > 100 || total < 1) {
         return alert('choose between 1 and 100 grid box you want')
